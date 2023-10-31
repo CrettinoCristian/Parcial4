@@ -1,0 +1,182 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: #333;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #0077b6;
+    text-align: center;
+} 
+
+h2 {
+    color: #023e8a;
+    text-align: center;
+    padding-top: 45px;
+}
+
+h3 {
+    color: #03045e;
+    padding-top: 45px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.p-img{
+    text-align: center;
+}
+
+img {
+    width: 487px;
+    height: 583px;
+    margin: 10px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.borde{
+    border: 3px solid #707070;
+}
+
+p {
+    line-height: 1.3;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Fuentes {
+    background-color: #eaeaea;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.Fuentes a {
+    margin-bottom: 10px; 
+    text-decoration: none;
+    color: #0077b6;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: column; 
+}
+
+.Fuentes a:hover {
+    color: #f08080;
+}
+
+.indice {
+    font-family: Arial, sans-serif;
+    background-color: #2d2e80;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.indice a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 60px;
+    transition: color 0.3s;
+}
+
+.indice a:hover {
+   color: #a0a0a0;
+}
+
+.expansion {
+    display: none;
+}
+
+.biografia-label {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: color 0.3s
+}
+
+.biografia-label:hover {
+    color: #a0a0a0;   
+}
+
+.biografia-titulos {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.expansion:checked ~ .biografia-label + .biografia-titulos {
+    max-height: 1000px; 
+}
+
+.biografia-titulos a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fuente{
+    margin-left: auto;
+}
+
+.Fin_pagina {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #757474;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos a:hover img {
+    transform: translateY(-3px);
+}
+
+.Fin_pagina h3 {
+    margin-bottom: 10px; 
+}
+
+.Fin_pagina img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.Foto-animada{
+    animation-name: anim;
+    animation: anim 2s forwards;
+}
+
+@keyframes anim {
+    0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
